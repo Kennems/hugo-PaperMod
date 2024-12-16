@@ -405,3 +405,8 @@ img.in-text {
     display: inline;
     margin: auto;
 }
+
+.post-content .highlight pre {
+    background-color: var(--theme) !important;
+    margin: 0;
+}

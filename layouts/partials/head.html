@@ -7,6 +7,8 @@
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
+<meta name="msvalidate.01" content="DF5FE493CC759E62BFE073BEA8EFD472" />
+
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
 
@@ -35,6 +37,7 @@
 {{- if site.Params.analytics.naver.SiteVerificationTag }}
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
+
 
 {{- /* Styles */}}
 
@@ -155,3 +158,12 @@
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
 {{- end -}}
+
+
+{{if .Page.Site.Params.fancybox }}
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{{ end }}
+
+
