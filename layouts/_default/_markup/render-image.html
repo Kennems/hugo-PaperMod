@@ -1,7 +1,7 @@
 
 <!-- <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} /> -->
 
-{{- $u := urls.Parse .Destination -}}
+<!-- {{- $u := urls.Parse .Destination -}}
 {{- $src := $u.String -}}
 {{- if not $u.IsAbs -}}
   {{- $path := strings.TrimPrefix "./" $u.Path }}
@@ -22,7 +22,7 @@
       {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
     {{- end -}}
   {{- end -}}>
-{{- /**/ -}}
+{{- /**/ -}} -->
 
 <!-- 图片点击预览 -->
 {{ if .Page.Site.Params.fancybox }}
