@@ -5,6 +5,15 @@
     justify-content: center;
 }
 
+/* 文章内使用的封面图 */
+.entry-cover1 img {
+    border-radius: var(--radius);
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
 .post-entry {
     display: flex;
     flex-direction: row;
@@ -27,13 +36,4 @@
     overflow: hidden;
     width: 100%;
     padding-right: 10px;
-}
-
-/* 文章内使用的封面图 */
-.entry-cover1 img {
-    border-radius: var(--radius);
-    pointer-events: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 40px;
 }

@@ -144,21 +144,15 @@
 {{- end }}
 
 {{- if not (.Param "hideFooter") }}
+<!-- 放在全局 footer -->
 <footer class="footer">
-    {{- if site.Copyright }}
-    ...
-    {{- end }}
-    <script async src="https://busuanzi.sukap.cn/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        Visitors: <span id="busuanzi_value_page_uv"></span>
-        Views: <span id="busuanzi_value_page_pv"></span>
+    <!-- 引入不蒜子最新版脚本 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-        <!-- 本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
-        本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
-        本站总访客数 <span id="busuanzi_value_site_uv"></span> 人
-        本文总访客量 <span id="busuanzi_value_page_uv"></span> 人 -->
-    </span>
+    <span id="busuanzi_container">
+    👤 Visitors: <span id="busuanzi_value_site_uv"></span>
+    👀 Views: <span id="busuanzi_value_site_pv"></span>
+  </span>
 </footer>
 {{- end }}
 
