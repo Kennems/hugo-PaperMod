@@ -105,7 +105,7 @@ svg:hover {
 }
 
 .social-icons a:nth-child(2) svg:hover {
-    color: grey !important;
+    color: #00ae9d !important;
 }
 
 #moon:hover {
